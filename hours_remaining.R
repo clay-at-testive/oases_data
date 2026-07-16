@@ -27,3 +27,5 @@ remaining = left_join(ostudents, oparents) %>%
   select(-Student.ID) %>%
   arrange(Hours.Left) %>%
   distinct(.)
+
+write.csv(file = '~/Desktop/oremaining.csv', remaining, row.names = FALSE)
